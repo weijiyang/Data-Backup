@@ -1,0 +1,25 @@
+{
+  "name": "data-backup",
+  "version": "1.0.0",
+  "description": "用来备份数据的小应用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager . 备份小能手 --platform=darwin --arch=x64 --overwrite --icon=img/icon --out=dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weijiyang/Data-Backup.git"
+  },
+  "author": "糖少",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weijiyang/Data-Backup/issues"
+  },
+  "homepage": "https://github.com/weijiyang/Data-Backup#readme",
+  "devDependencies": {
+    "electron": "^9.1.2",
+    "electron-packager": "^15.0.0"
+  }
+}

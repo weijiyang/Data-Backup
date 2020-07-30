@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    欢迎来到糖少第一个客户端应用
+    <script>
+        let myNotification = new Notification('标题', {
+            body: '通知正文内容'
+        })
+
+        myNotification.onclick = () => {
+            console.log('通知被点击')
+        }
+    </script>
+  </body>
+</html>
